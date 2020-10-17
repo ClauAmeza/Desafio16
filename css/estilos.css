@@ -1,0 +1,344 @@
+body {
+	background-color: #FAFAFA;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 95px 1fr 550px 56px;
+	grid-template-areas: 
+	"header header"
+	"title title"
+	"formulario contacto"
+	"footer footer"
+}
+
+header {
+	grid-area: header;
+}
+.titleSection {
+	grid-area: title;
+	margin: 35px;
+}
+.formulario {
+	grid-area: formulario;
+	margin: 35px;
+}
+.datosContacto {
+	grid-area: contacto;
+	margin-left: 35px;
+	margin-top: 60px;
+}
+footer {
+	grid-area: footer;
+}
+
+.gridServicios {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 200px 1fr;
+	grid-template-areas: 
+	"titleServicio titleServicio titleServicio titleServicio"
+	"desaWeb desaApp disenio ux"
+}
+
+.servicios {
+	grid-area: titleServicio;
+}
+.webBox {
+	grid-area: desaWeb;
+}
+.appBox {
+	grid-area: desaApp;
+}
+.disenioBox {
+	grid-area: disenio;
+}
+.uxBox {
+	grid-area: ux;
+}
+
+.gridTrabajos {
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+	grid-template-rows: 200px 1fr 50px;
+	grid-template-areas: 
+	"trabajo trabajo trabajo"
+	". carousel ."
+	". . ."
+}
+
+.article {
+	grid-area: carousel;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+.trabajos {
+	grid-area: trabajo;
+}
+/*
+.trabajo1 {
+	grid-area: trabajoUno;
+}
+.trabajo2 {
+	grid-area: trabajoDos;
+}
+.trabajo3 {
+	grid-area: trabajoTres;
+}
+.trabajo4 {
+	grid-area: trabajoCuatro;
+}*/
+
+.gridNosotros {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 250px 1fr;
+	grid-template-areas: 
+	"nosotros nosotros nosotros nosotros"
+	"nosotros1 nosotros2 nosotros3 nosotros4"
+}
+.nosotros {
+	grid-area: nosotros;
+}
+.nosotros1{
+	grid-area: nosotros1;
+}
+.nosotros2{
+	grid-area: nosotros2;
+}
+.nosotros3{
+	grid-area: nosotros3;
+}
+.nosotros4{
+	grid-area: nosotros4;
+}
+
+.gridInicio {
+	display: grid;
+	grid-template-columns: 33% auto 33%;
+	grid-template-rows: 1fr 100px auto;
+	grid-template-areas: 
+	"bannerInicio bannerInicio bannerInicio"
+	"inicio inicio inicio"
+	"inicio1 inicio2 inicio3"
+}
+
+.bannerInicio {
+	grid-area: bannerInicio;
+}
+.inicio {
+	grid-area: inicio;
+}
+.inicio1 {
+	grid-area: inicio1;
+}.inicio2 {
+	grid-area: inicio2;
+}.inicio3 {
+	grid-area: inicio3;
+}
+
+.navBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #ffffff;
+	background-color: #0455BF;
+	font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+	width: 160px;
+	padding-left: 25px;
+}
+
+/*.titulo {
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif;
+	margin: 15px;*/
+
+
+.lista div {
+	margin: 15px;
+	list-style-type: none;
+	display: inline-block;
+	padding-right: 25px;
+}
+
+.lista li {
+	width: 100px;
+	/*height: 50px;*/
+	position: relative;
+}
+
+.lista a {
+	color: #ffffff;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+}
+
+.lista a:hover {
+	color: #F25C05;
+	text-decoration: none;
+}
+
+.bannerHome {
+	width: 100%;
+	height: auto;
+}
+
+.articleServicios {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.subtitulo {
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	color: #0455BF;
+	text-align: center;
+}
+
+.subtitulo2 {
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.texto {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+}
+
+.textoContacto {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	margin-left: 45px;
+	margin-top: 15px;
+}
+
+.boton {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	color: #ffffff;
+	border: none;
+	border-radius: 30px;
+	padding: 13px 23px;
+	margin: 10px;
+	font-weight: normal;
+	background: #F25C05;
+	opacity: 75%;
+}
+
+.transition:hover {
+	background: #F25C05;
+	opacity: 100%;
+
+}
+
+.articleBox {
+	border: solid 1px;
+	margin-top: 20px;
+	margin-right: 10px;  
+	margin-bottom: 20px;
+	margin-left: 10px;
+	padding: 10px 15px;
+	display: inline-block;
+}
+
+.nameSection {
+	font-size: 32px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	color: #0455BF;
+	
+}
+
+.textoSeccion {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	text-align: center;
+
+}
+
+.icono {
+	width: 28px;
+	height: 28px;
+}
+
+.footer {
+	/*background-color: #0455BF;*/
+	background-image: linear-gradient(to bottom, #0455BF, #000046);
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 25px;
+	height: 70px;
+}
+
+.footer div {
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 10px 5px;
+}
+
+.rrss {
+	width: 22px;
+	height: 22px;
+}
+
+/*.formBox div {
+	display: inline-block;
+	margin: 35px; #000046)
+}*/
+
+.fotoPerfil {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.textoPerfil {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	text-align: center;
+	padding: 25px 40px;
+}
+
+@media screen and (max-width: 576px) {
+	.nameSection {
+		font-size: 28px;
+		text-align: center;
+	}
+	.gridTrabajos {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 200px 1fr 50px;
+	grid-template-areas: 
+	"trabajo"
+	"carousel"
+	"."
+	}
+
+	.article {
+		grid-area: carousel;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+	}
+
+	.trabajos {
+		grid-area: trabajo;
+	}
+}
+
+
+
+
